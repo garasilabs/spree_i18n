@@ -144,76 +144,76 @@ id:
     models:
       spree/address:
         one: "Alamat"
-        other: "Alamat lainnya"
+        other: "Alamat"
       spree/cheque_payment:
         one: "Pembayaran Dengan Cek"
-        other: "Pembayaran lainnya Dengan Cek"
+        other: "Pembayaran Dengan Cek"
       spree/country:
         one: "Negara"
-        other: "Negara lainnya"
+        other: "Negara"
       spree/credit_card:
         one: "Kartu Kredit"
-        other: "Kartu kredit lainnya"
+        other: "Kartu Kredit"
       spree/creditcard_payment:
         one: "Pembayaran dengan Kartu Kredit"
-        other: "Pembayaran lainnya dengan Kartu Kredit"
+        other: "Pembayaran dengan Kartu Kredit"
       spree/creditcard_txn:
         one: "Transaksi Kartu Kredit"
-        other: "Transaksi lainnya dengan Kartu Kredit"
+        other: "Transaksi dengan Kartu Kredit"
       spree/inventory_unit:
         one: "Satuan Unit"
-        other: "Satuan Unit lainnya"
+        other: "Satuan Unit"
       spree/line_item:
         one: "Barang"
-        other: "Barang lainnya"
+        other: "Barang"
       spree/order:
         one: "Pemesanan"
-        other: "Pemesanan lainnya"
+        other: "Pemesanan"
       spree/payment:
         one: "Pembayaran"
-        other: "Pembayaran lainnya"
+        other: "Pembayaran"
       spree/product:
         one: "Produk"
-        other: "Produk lainnya"
+        other: "Produk"
       spree/property:
         one: "Properti"
-        other: "Properti lainnya"
+        other: "Properti"
       spree/prototype:
         one: "Prototipe"
-        other: "Prototipe lainnya"
+        other: "Prototipe"
       spree/return_authorization:
         one: "Otorisasi Pengembalian"
-        other: "Otorisasi Pengembalian lainnya"
+        other: "Otorisasi Pengembalian"
       spree/role:
         one: "Peran"
-        other: "Peran lainnya"
+        other: "Peran"
       spree/shipment:
         one: "Pengiriman"
-        other: "Pengiriman lainnya"
+        other: "Pengiriman"
       spree/shipping_category:
         one: "Kategori Pengiriman"
-        other: "Kategori Pengiriman lainnya"
+        other: "Kategori Pengiriman"
       spree/state:
         one: "Provinsi"
-        other: "Provinsi lainnya"
+        other: "Provinsi"
       spree/tax_category:
         one: "Kategori Pajak"
-        other: "Kategori Pajak lainnya"
+        other: "Kategori Pajak"
       spree/tax_rate:
         one: "Persentase Pajak"
-        other: "Persentase Pajak lainnya"
+        other: "Persentase Pajak"
       spree/taxon:
         one: "Takson"
-        other: "Takson lainnya"
+        other: "Takson"
       spree/taxonomy:
         one: "Taksonomi"
-        other: "Taksonomi lainnya"
+        other: "Taksonomi"
       spree/user:
         one: "Pengguna"
-        other: "Pengguna lainnya"
+        other: "Pengguna"
       spree/variant:
         one: "Varian"
-        other: "Varian lainnya"
+        other: "Varian"
       spree/zone:
         one: "Wilayah"
         other: "Wilayah-wilayah"
@@ -231,7 +231,7 @@ id:
   add_product_properties: "Tambahkan Properti Produk"
   add_rule_of_type: "Tambahkan Aturan Untuk Tipe"
   add_scope: "Tambahkan Cakupan"
-  add_state: "Tambahkan Status"
+  add_state: "Tambahkan Provinsi"
   add_to_cart: "Tambahkan ke Keranjang Belanja"
   add_zone: "Tambahkan Wilayah"
   additional_item: "Tambahan Harga Barang"
@@ -339,7 +339,6 @@ id:
   check_for_spree_alerts: "Cek peringatan Spree"
   checkout: "Checkout"
   cheque: "Cek"
-  choose_a_customer: "Pilih pelanggan"
   choose_currency: "Pilih Mata Uang"
   choose_dashboard_locale: "Pilih Bahasa Dashboard"
   city: "Kota"
@@ -390,11 +389,6 @@ id:
   customer_details_updated: "Detail pelanggan telah diubah"
   customer_search: "Pencarian pelanggan"
   cut: "Potong"
-  date:
-    formats:
-      default: ! '%d %b %Y'
-      long: ! '%A, %d %B %Y'
-      short: ! '%d.%m.%Y'
   date_completed: "Tanggal Selesai"
   date_created: "Tanggal terbuat"
   date_range: "Rentang Tanggal"
@@ -650,10 +644,11 @@ id:
   new_zone: "Daerah baru"
   next: "Lanjut"
   "no": "Tidak"
-  say_no: "Tidak"
+  no_actions_added: "Tidak ada aksi yang ditambahkan."
+  no_images_found: "Tidak ditemukan gambar untuk produk."
   no_items_in_cart: "Tidak ada barang di keranjang belanja"
   no_mail_methods_defined: "Tidak ada metode pesan yang didefinisikan"
-  no_match_found: "Tidak ditemukan"
+  no_match_found: "Tidak diketemukan"
   no_products_found: "Produk tidak ditemukan"
   no_promotions_found: "Promosi tidak ditemukan"
   no_results: "Tidak ada hasil"
@@ -665,7 +660,7 @@ id:
   normal_amount: "Jumlah normal"
   not: "Bukan"
   not_available: "Tidak tersedia"
-  not_found: "Tidak diketemukan"
+  not_found: "%{resource} tidak diketemukan"
   not_shown: "Tidak ditunjukan"
   note: "Catatan"
   notice_messages:
@@ -700,26 +695,26 @@ id:
       instructions: "Pesanan anda telah DIBATALKAN.  Silahkan simpan informasi pendaftaran ini untuk catatan anda."
       order_summary_canceled: "Rekap pemesanan [DIBATALKAN]"
       subject: "Pembatalan order"
-      subtotal: 	"Subtotal:"
-      total: "Total pembayaran:"
+      subtotal: "Subtotal: %{subtotal}"
+      total: "Total pembayaran: %{total}"
     confirm_email:
       dear_customer: "Untuk pelanggan,"
       instructions: "Silahkan melihat dan menyimpan urutan informasi sebagai berikut untuk catatan anda."
       order_summary: "Rekap pemesanan"
       subject: "Konfirmasi pemesanan"
-      subtotal: "Subtotal:"
+      subtotal: "Subtotal: %{subtotal}"
       thanks: "Terima kasih untuk bisnis anda."
-      total: "Total pemesanan:"
+      total: "Total pemesanan: %{total}"
   order_not_in_system: "Nomer pemesanan tidak berlaku di situs ini."
   order_number: "Nomor Pemesanan"
   order_operation_authorize: "Otorisasi"
   order_processed_but_following_items_are_out_of_stock: "Pemesanan anda telah diproses, tetapi barang berikut stoknya habis:"
   order_processed_successfully: "Pesanan anda telah berhasil diproses"
   order_state:
-    address: "Alamat"
-    adjustments: "Adjustments"
-    awaiting_return: "Penungguan kembali"
-    canceled: "Telah dibatalkan"
+    address: "alamat"
+    adjustments: "adjustments"
+    awaiting_return: "penungguan kembali"
+    canceled: "telah dibatalkan"
     cart: "keranjang"
     complete: "selesai"
     confirm: "konfirmasi"
@@ -729,10 +724,10 @@ id:
     returned: "kembali"
     skrill: "skrill"
   order_summary: "Rekap pemesanan"
-  order_sure_want_to: "Apakah anda yakin %{event} pemesanan ini?"
+  order_sure_want_to: "Apakah anda yakin akan %{event} pemesanan ini?"
   order_total: "Total pemesanan"
   order_total_message: "Total jumlah dibebankan ke kartu anda"
-  order_updated: "Memperbarui pemesanan"
+  order_updated: "Pemesanan diperbaharui"
   orders: "Pemesanan"
   other_payment_options: "Pilihan lain pembayaran "
   out_of_stock: "Stok habis"
@@ -766,7 +761,7 @@ id:
   payment_processor_choose_link: "halaman pembayaran kami"
   payment_state: "Status pembayaran"
   payment_states:
-    balance_due: "Sisa Pelunasan"
+    balance_due: "Saldo"
     checkout: "checkout"
     completed: "Selesai"
     credit_owed: "Kredit yang dimiliki"
@@ -971,6 +966,7 @@ id:
   provider: "Penyedia"
   provider_settings_warning: "Jika anda mengubah tipe penyedia, pertama kali anda harus simpan dulu sebelum dapat mengubah pengaturan penyedia"
   qty: "Kuantitas"
+  quantity: "Kuantitas"
   quantity_returned: "Kuantitas kembali"
   quantity_shipped: "Kuantitas dikirim"
   range: "Jarak"
@@ -1130,11 +1126,14 @@ id:
         token: "Token"
     date: "Tanggal"
     date_picker:
-      format: ! '%Y/%m/%d'
-      js_format: 'yy/mm/dd'
+      format: "Format"
     time: "Waktu"
   spree/order:
     coupon_code: "Kode Kupon"
+    date: "Tanggal"
+    date_picker:
+      format: 'yy/mm/dd'
+    time: "Waktu"
   spree_alert_checking: "Cek keamanan Spree dan peringatan release"
   spree_alert_not_checking: "Tidak melakukan Cek keamanan Spree dan peringatan release"
   spree_gateway_error_flash_for_checkout: "Terdapat suatu masalah dengan informasi pembayaran anda. Cek informasi anda lagi dan coba lagi."
@@ -1155,13 +1154,13 @@ id:
   status: "Status"
   stop: "Berakhir"
   store: "Toko"
-  street_address: "Alamat"
-  street_address_2: "Alamat (lanjutan)"
+  street_address: "Alamat Jalan"
+  street_address_2: "Alamat Jalan (cont'd)"
   subtotal: "Subtotal"
   subtract: "Kurangi"
-  successfully_created: "%{resource} telah Berhasil Dibuat!"
-  successfully_removed: "%{resource} telah Berhasil Dihapus!"
-  successfully_updated: "%{resource} telah Berhasil Diubah!"
+  successfully_created: "%{resource} telah berhasil dibuat!"
+  successfully_removed: "%{resource} telah berhasil dihapus!"
+  successfully_updated: "%{resource} telah berhasil diubah!"
   system: "Sistem"
   tax: "Pajak"
   tax_categories: "Kategori Pajak"
@@ -1259,7 +1258,6 @@ id:
   width: "Lebar"
   year: "Tahun"
   "yes": "Ya"
-  say_yes: "Ya"
   you_have_been_logged_out: "Anda telah keluar."
   you_have_no_orders_yet: "Anda belum mempunyai pesanan."
   your_cart_is_empty: "Keranjang Belanja anda kosong"
